@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Form with Live Preview</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Left: Product Form -->
+    <div class="form-section">
+      <h2>Add Product</h2>
+      <div id="messageBox"></div>
+      <form id="productForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="imageUrl">Image URL:</label>
+          <input type="text" id="imageUrl" />
+        </div>
+        <div class="form-group">
+          <label for="price">Price ($):</label>
+          <input type="number" id="price" step="0.01" />
+        </div>
+        <div class="form-group">
+          <label for="brand">Brand:</label>
+          <input type="text" id="brand" />
+        </div>
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+
+    <!-- Right: Product Display -->
+    <div class="products-section">
+      <h2>Products</h2>
+      <div id="productList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
